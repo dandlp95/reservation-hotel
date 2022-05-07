@@ -13,7 +13,7 @@ array<string, 4> Reservation::get_reservation_info() const {
 
 	array<string, 4> reservation_info= { start_date, end_date, room, guest_number };
 	
-	return reservation_info;
+	return reservation_info; // Returns the reservation information in the form of an array
 }
 
 

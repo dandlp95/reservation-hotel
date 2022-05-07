@@ -14,7 +14,8 @@ class ReservationManager
 	const Customer& client;
 
 	public:
-		ReservationManager(const Customer& client, const Reservation& client_reservation);
+		ReservationManager(const Customer& client, const Reservation& client_reservation); // To store the reservation, we need both the client's and reservantion's info to store it.
+
 		void make_reservation();
 
 };

@@ -12,7 +12,8 @@ ReservationManager::ReservationManager(const Customer& client, const Reservation
 
 
 void ReservationManager::make_reservation() {
-
+		
+	// We get the customer's and reservaiton information, and add it as values of the json object below.
 	array<string, 3> client_info = client.get_customer_info();
 
 	string client_name = client_info[0];
@@ -26,6 +27,8 @@ void ReservationManager::make_reservation() {
 	string room = reservation_info[2];
 	string guest_number = reservation_info[3];
 
+	// Uses the nlohmann library to create a json object. This object creates a new reservation which will
+	// be added to the json file.
 	json reservation = {
 		{"client", {
 			{"name", client_name},
@@ -41,14 +44,19 @@ void ReservationManager::make_reservation() {
 		}}
 	};
 
+	
 	ifstream ifs("reservation.json");
 	json reservation_db = json::parse(ifs);
 
+	// We get the list of reservations frmo the json file to get its size. The size is used to determine
+	// in which index we'll add the new reservation
 	int db_size = reservation_db["reservations"].size();
 	
 	// we dont need to add +1 to db_size because the index starts at 0, so size works perfect.
+	// Adds the new reservation
 	reservation_db["reservations"][db_size] = reservation;
 
+	// Writes it back to the json file. 
 	std::ofstream f("reservation.json");
 	f << std::setw(4) << reservation_db << std::endl;
 }

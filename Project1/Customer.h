@@ -8,6 +8,8 @@ using namespace std;
 class Customer
 {
 	private:
+		// Information we'll store for the client for check in purposes and correctly
+		// identify their reservation.
 		string name;
 		string credit_card;
 		string address;

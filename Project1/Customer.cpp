@@ -9,5 +9,5 @@ array <string, 3> Customer::get_customer_info()const {
 	
 	array <string, 3> customer_inf = { name, credit_card, address };
 
-	return customer_inf;
+	return customer_inf; // Returns all the info in the form of an array
 }
