@@ -1,0 +1,88 @@
+{
+    "reservations": [
+        {
+            "client": {
+                "address": "Something street",
+                "creditCard": "123",
+                "name": "Joe"
+            },
+            "reservation": {
+                "endDate": "02-01-2000",
+                "guests": "1",
+                "reservationStatus": "cancelled",
+                "room": "201",
+                "startDate": "01-01-2000"
+            }
+        },
+        {
+            "client": {
+                "address": "else street",
+                "creditCard": "456",
+                "name": "Paul"
+            },
+            "reservation": {
+                "endDate": "02-01-2000",
+                "guests": "3",
+                "reservationStatus": "waiting",
+                "room": "202",
+                "startDate": "01-01-2000"
+            }
+        },
+        {
+            "client": {
+                "address": "address",
+                "creditCard": "credit_card",
+                "name": "client_name"
+            },
+            "reservation": {
+                "endDate": "end_date",
+                "guests": "guest_number",
+                "reservationStatus": "waiting",
+                "room": "room",
+                "startDate": "start_date"
+            }
+        },
+        {
+            "client": {
+                "address": "street",
+                "creditCard": "123",
+                "name": "Joe Dou"
+            },
+            "reservation": {
+                "endDate": "01-02-2022",
+                "guests": "1",
+                "reservationStatus": "checked out",
+                "room": "201",
+                "startDate": "01-01-2022"
+            }
+        },
+        {
+            "client": {
+                "address": "123 street",
+                "creditCard": "12345678",
+                "name": "mario arturo soto"
+            },
+            "reservation": {
+                "endDate": "05-09-2022",
+                "guests": "",
+                "reservationStatus": "waiting",
+                "room": "10",
+                "startDate": "05-07-2022"
+            }
+        },
+        {
+            "client": {
+                "address": "Rexburg street",
+                "creditCard": "894843",
+                "name": "Manolo Smith"
+            },
+            "reservation": {
+                "endDate": "05-07-2022",
+                "guests": "",
+                "reservationStatus": "waiting",
+                "room": "2",
+                "startDate": "05-07-2022"
+            }
+        }
+    ]
+}
