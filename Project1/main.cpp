@@ -65,7 +65,7 @@ int main() {
 
 				string guests;
 				cout << "How many guests? ";
-				cin >> room;
+				cin >> guests;
 				cout << endl;
 
 				Reservation client_reservation(start_date, end_date, room, guests); // Stores information about the reservation.

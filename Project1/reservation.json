@@ -58,29 +58,43 @@
         },
         {
             "client": {
-                "address": "123 street",
-                "creditCard": "12345678",
-                "name": "mario arturo soto"
+                "address": "Krypton street",
+                "creditCard": "123",
+                "name": "Clark Kent"
             },
             "reservation": {
                 "endDate": "05-09-2022",
-                "guests": "",
+                "guests": "3",
                 "reservationStatus": "waiting",
-                "room": "10",
+                "room": "200",
+                "startDate": "05-07-2022"
+            }
+        },
+        {
+            "client": {
+                "address": "England Street",
+                "creditCard": "007",
+                "name": "James Bond"
+            },
+            "reservation": {
+                "endDate": "05-09-2022",
+                "guests": "3",
+                "reservationStatus": "waiting",
+                "room": "100",
                 "startDate": "05-07-2022"
             }
         },
         {
             "client": {
                 "address": "Rexburg street",
-                "creditCard": "894843",
-                "name": "Manolo Smith"
+                "creditCard": "123",
+                "name": "Danny Boy"
             },
             "reservation": {
-                "endDate": "05-07-2022",
-                "guests": "",
+                "endDate": "05-09-2022",
+                "guests": "2",
                 "reservationStatus": "waiting",
-                "room": "2",
+                "room": "300",
                 "startDate": "05-07-2022"
             }
         }
